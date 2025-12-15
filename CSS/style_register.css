@@ -1,0 +1,175 @@
+:root {
+    --nav-color: #DC9AF2;
+    --foot-color: #DCFF16;
+    --other-color: #13B82E;
+    --font-family:  'Inika','Inter','Poppins', sans-serif;
+    
+}
+
+.register {
+    background: #f5f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register .register-container {
+    width: 50%;
+}
+
+.register .register-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.08);
+}
+
+.register h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--nav-color);
+}
+
+.register .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register .input-group label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register .input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.register .btn {
+    width: 50%;
+    padding: 12px;
+    background: var(--nav-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 25%;
+    transition: .3s;
+}
+.register .btn a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+
+.register .btn:hover {
+    background: #f2ea55;
+}
+
+.register .login-link {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.register .login-link a {
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+/* Tablet devices (768px and down) */
+@media (max-width: 768px) {
+  .register {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 0;
+  }
+
+  .register .register-container {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .register .register-box {
+    padding: 25px 20px;
+  }
+
+  .register h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .register .input-group input {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .register .btn {
+    width: 70%;
+    margin-left: 15%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .register .login-link {
+    font-size: 15px;
+  }
+}
+
+/* Mobile devices (480px and down) */
+@media (max-width: 480px) {
+  .register {
+    padding: 15px 0;
+  }
+
+  .register .register-container {
+    width: 95%;
+  }
+
+  .register .register-box {
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  .register h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .register .input-group label {
+    font-size: 15px;
+  }
+
+  .register .input-group input {
+    padding: 14px;
+    font-size: 16px; /* Touch-friendly */
+  }
+
+  .register .btn {
+    width: 90%;
+    margin-left: 5%;
+    padding: 16px;
+    font-size: 17px;
+  }
+
+  .register .btn a {
+    font-size: 16px;
+  }
+
+  .register .login-link {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}

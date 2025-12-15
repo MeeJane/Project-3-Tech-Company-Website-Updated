@@ -1,0 +1,164 @@
+:root {
+    --nav-color: #DC9AF2;
+    --foot-color: #DCFF16;
+    --other-color: #13B82E;
+    --font-family:  'Inika','Inter','Poppins', sans-serif;
+    
+}
+
+
+
+/* MAIN CONTAINER */
+.login-container {
+    width: 100vw;
+    height: auto;
+}
+
+/* LOGIN BOX */
+.login-box {
+    width: 40%;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+}
+
+/* TITLE */
+.login-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--nav-color);
+}
+
+/* INPUT GROUP */
+.login-input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input-group label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    width: 40%;
+    padding: 11px;
+    background: var(--nav-color);
+    margin-left: 30%;
+    border: none;
+    border-radius: 6px;
+    
+    cursor: pointer;
+    transition: .3s ease;
+}
+.login-btn a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-family);
+}
+.login-btn:hover {
+    background: var(--foot-color);
+}
+
+/* BOTTOM REGISTER LINK */
+.login-register-link {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.login-register-link a {
+    color: #0066ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Tablet devices (768px and down) */
+@media (max-width: 768px) {
+  .login-box {
+    width: 85%;
+    max-width: 450px;
+    padding: 25px 20px;
+    margin: 30px auto;
+  }
+
+  .login-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .login-input-group input {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .login-btn {
+    width: 60%;
+    margin-left: 20%;
+    padding: 13px;
+    font-size: 16px;
+  }
+
+  .login-register-link {
+    font-size: 15px;
+  }
+}
+
+/* Mobile devices (480px and down) */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-box {
+    width: 95%;
+    padding: 20px 15px;
+    margin: 20px auto;
+    border-radius: 8px;
+  }
+
+  .login-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .login-input-group label {
+    font-size: 15px;
+  }
+
+  .login-input-group input {
+    padding: 14px;
+    font-size: 16px; /* Touch-friendly */
+  }
+
+  .login-btn {
+    width: 85%;
+    margin-left: 7.5%;
+    padding: 16px;
+    font-size: 17px;
+  }
+
+  .login-btn a {
+    font-size: 16px;
+  }
+
+  .login-register-link {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
